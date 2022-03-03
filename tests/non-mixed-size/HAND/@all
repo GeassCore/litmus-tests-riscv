@@ -135,15 +135,15 @@ SB+fence.rw.rw+ctrlfence.r.r.litmus
 ###Rule 3 does (not ?) applies to wsi-rfi
 MP+fence.rw.rw+rmw-wsi-rfi-addr.litmus
 ## LR/SC to different locations:
-LR-SC-diff-loc1.litmus
-LR-SC-diff-loc2.litmus
-LR-SC-diff-loc3.litmus
-LR-SC-diff-loc4.litmus
+#LR-SC-diff-loc1.litmus
+#LR-SC-diff-loc2.litmus
+#LR-SC-diff-loc3.litmus
+#LR-SC-diff-loc4.litmus
 ## test fence.tso
-#MP+fence.w.w+fence.tso.litmus
-#S+fence.w.w+fence.tso.litmus
-#R+fence.w.w+fence.tso.litmus
-#2+2W+fence.w.w+fence.tso.litmus
+MP+fence.w.w+fence.tso.litmus
+S+fence.w.w+fence.tso.litmus
+R+fence.w.w+fence.tso.litmus
+2+2W+fence.w.w+fence.tso.litmus
 ##
 CoWR.litmus
 RDW.litmus
